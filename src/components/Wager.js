@@ -28,8 +28,12 @@ export const Wager = ({addJob}) => {
   }
   return (
     <>
-     <div className='container my-5'>
-     <h2>Enter Your Valid Inormation</h2>
+     <div className=" d-flex align-items-center justify-content-center " style={{color : '#34495E ',  paddingTop:'5rem',}}>
+
+      <div className=" card auth-card input-field align-items-center " style={{width:'50rem' ,paddingBottom:'10px', color:'#212F3D', backgroundColor:'#979A9A'}}>
+
+      <h2>Enter Your Valid Details</h2>
+      <p> *should be filled by only one member of the group</p>
     <form onSubmit ={submit} className="row g-3">
       
     <div className="col-md-6">
@@ -90,7 +94,7 @@ export const Wager = ({addJob}) => {
   </div>
   
   <div className="col-md-4">
-    <label htmlFor="Wagers" className="form-label">Number of Wagers</label>
+    <label htmlFor="Wagers" className="form-label">Number of member in your team</label>
     <input type="text" value={Wagers} onChange={(e)=>setWagers(e.target.value)} className="form-control" placeholder={Wagers} id="Wagers"/>
     
    {/* <button type="button"  className="btn btn-primary mx-4">+</button>
@@ -116,6 +120,8 @@ export const Wager = ({addJob}) => {
     <button type="submit"  className="btn btn-primary">Add Job</button>
   </div>
 </form>
+      </div>
+    
     </div>
     </>
    

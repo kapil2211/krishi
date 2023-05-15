@@ -1,0 +1,25 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer button{
+    outline: none;
+    border: none;
+    background-color: blueviolet;
+    color: blanchedalmond;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px 16px;
+    transition:100ms ;
+    cursor: pointer;
+}
+
+.footer.error{
+    font-weight: bold;
+    font-size: 0.875rem;
+    color: rgb(14, 169, 169);
+}
