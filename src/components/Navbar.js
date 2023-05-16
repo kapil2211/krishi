@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+
 
 
 const Navbar = () => {
@@ -12,17 +13,35 @@ const Navbar = () => {
     </button>
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+
         <li className="nav-item">
           <a className="nav-link" aria-current="page" href="/">Home</a>
         </li>
-        <li className="nav-item"><a className="nav-link" href="/about">About</a></li>
+
+        <li className="nav-item">
+          <a className="nav-link" href="/about">About</a>
+        </li>
+
+        <li className="nav-item dropdown">
+          <a className="nav-link dropdown-toggle" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Features 
+          </a>
+          <ul className="dropdown-menu">
+            <li><a className="dropdown-item" href="/wager">Weather Report</a></li>
+            <li><a className="dropdown-item" href="/job">pesticides & insecticides</a></li>
+            <li><a className="dropdown-item" href="/job">Government scheme</a></li>
+            <li><a className="dropdown-item" href="/job">Consultant</a></li>
+            
+          </ul>
+        </li>
+
         <li className="nav-item dropdown">
           <a className="nav-link dropdown-toggle" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Jobs
           </a>
           <ul className="dropdown-menu">
-            <li><a className="dropdown-item" href="/wager">Apply of Wagers</a></li>
-            <li><a className="dropdown-item" href="/job">Need of Jobs</a></li>
+            <li><a className="dropdown-item" href="/wager">Apply for JOB</a></li>
+            <li><a className="dropdown-item" href="/job">Wagers availability list </a></li>
           </ul>
         </li>
         <li className="nav-item dropdown">
@@ -30,15 +49,15 @@ const Navbar = () => {
             AgriMachinery
           </a>
           <ul className="dropdown-menu">
-            <li><a className="dropdown-item" href="/machines">Apply for AgriMachinery</a></li>
-            <li><a className="dropdown-item" href="/mach">Need of Machines</a></li>
+            <li><a className="dropdown-item" href="/machines">AgriMachinery form</a></li>
+            <li><a className="dropdown-item" href="/mach"> Agrimachinery availability List </a></li>
           </ul>
         </li>
 
       </ul>
-      <form class="d-flex" role="search">
-        <button class="btn btn-success mx-2" type="submit">LogIn</button>
-        <button class="btn btn-success" type="submit">SignUp</button>
+      <form className="d-flex" >
+        <a className="btn btn-primary mx-2" role="button" type="submit" href="/login">LogIn</a>
+        <a className="btn btn-primary mx-2" role="button" type="submit" href="/signup">SignUp</a>
       </form>
      
     </div>
