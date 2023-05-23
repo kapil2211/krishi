@@ -1,7 +1,5 @@
 import React from 'react';
 
-
-
 const Navbar = () => {
   return (
     <div>
@@ -27,10 +25,10 @@ const Navbar = () => {
             Features 
           </a>
           <ul className="dropdown-menu">
-            <li><a className="dropdown-item" href="/wager">Weather Report</a></li>
-            <li><a className="dropdown-item" href="/job">pesticides & insecticides</a></li>
-            <li><a className="dropdown-item" href="/job">Government scheme</a></li>
-            <li><a className="dropdown-item" href="/job">Consultant</a></li>
+            <li><a className="dropdown-item" href="/">Weather Report</a></li>
+            <li><a className="dropdown-item" href="/">pesticides & insecticides</a></li>
+            <li><a className="dropdown-item" href="/">Government scheme</a></li>
+            <li><a className="dropdown-item" href="/">Consultant</a></li>
             
           </ul>
         </li>

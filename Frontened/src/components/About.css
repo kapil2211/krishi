@@ -1,0 +1,10 @@
+
+ .image1 {
+    mask-image: url(D:\learnwebdevreact\krishi\Frontened\src\img\firstpro2.jpg);
+    display: block;
+    min-height: 100%;
+    max-width: 100%;
+    background-size: cover;
+  } 
+
+  
